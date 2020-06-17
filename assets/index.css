@@ -61,7 +61,7 @@
   background-color: #000;
   opacity: .7;
   display: none;
-
+  z-index: 2;
 }
 
 .end {
@@ -71,6 +71,7 @@
   transform: translateX(-50%);
   text-align: center;
   display: none;
+  z-index: 3;
   /* color: red; */
 }
 
@@ -136,4 +137,24 @@
   font-size: 18px;
   font-weight: bolder;
   cursor: pointer;
+}
+
+.pipe {
+  position: absolute;
+  /* left: 300px; */
+  width: 52px;
+  height: 150px;
+  background-color: red;
+  z-index: 1;
+}
+
+.pipe.pipe-up {
+  top: 0;
+  background-image: url('../images/pipe2.png');
+  background-position-y: bottom;
+}
+
+.pipe.pipe-bottom {
+  bottom: 0;
+  background-image: url('../images/pipe1.png');
 }
